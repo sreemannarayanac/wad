@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login - E-commerce website</title>
+        <link rel="stylesheet" href="week2.css" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            form {
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            }
+
+            input[type="text"], input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                background-color: #5C6BC0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/week2.html">
+            <h2>Login</h2>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>
