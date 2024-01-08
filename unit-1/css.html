@@ -10,8 +10,15 @@
         }
 
         /* Class selector */
-        .highlight {
+        .highlight { /* Used Box model (margin, border, padding, content) */
+            margin: 1pt;
+            border: 1.5px solid gray;
+            border-radius: 10pt;
+            padding: 10px;
+            padding-bottom: 5px;
             background-color: yellow;
+            color: rgb(125, 0, 0);
+            text-align: center;
         }
 
         /* ID selector */
@@ -21,7 +28,16 @@
 
         /* Attribute selector */
         input[type="text"] {
-            border: 1px solid gray;
+            margin: 10pt;
+            margin-bottom: 2pt;
+            margin-left: 25%;
+            border: 1.5px solid gray;
+            text-align: center;
+        }
+
+        /* Style for each list item */
+        ul li {
+            list-style-type: circle;
         }
     </style>
     <link rel="stylesheet" href="styles.css">
@@ -30,5 +46,10 @@
     <h1 id="main-heading">Hello, World!</h1>
     <p class="highlight">This is an example of inline, document level, and external styling.</p>
     <input type="text" placeholder="Enter your name">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 </body>
 </html>
