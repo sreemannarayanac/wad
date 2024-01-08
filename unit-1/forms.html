@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Fields</title>
+</head>
+<body>
+    <form target="_self" autocomplete="on" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="readonly@gitam.edu" readonly><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter valid password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="Select your Date of Birth"><br><br>
+
+        Select your section:<br>
+        <label for="section-a">Section A</label>
+        <input type="radio" id="section-a" name="section" value="a"><br>
+        <label for="section-b">Section B</label>
+        <input type="radio" id="section-b" name="section" value="b"><br>
+        <label for="section-c">Section C</label>
+        <input type="radio" id="section-c" name="section" value="c"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="agree">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="agree" name="agree" required><br><br>
+
+        <button type="submit" placeholder="Button to submit the form response">Check in</button>
+    </form>
+</body>
+</html>

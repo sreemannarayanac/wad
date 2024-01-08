@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-color: brown;
+            border: 1pt solid brown;
+            background-color: antiquewhite;
+            color: black;
+        }
+        th {
+            border: 1pt solid brown;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            vertical-align: top;
+        }
+        td {
+            border: 1pt solid black;
+        }   
+    </style>
+</head>
+<body>
+    <table border="border" cellpadding="5pt">
+        <tr>
+            <th colspan="4" bgcolor="cyan">Hello!</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>Jai</td>
+            <td>Sharma</td>
+            <td>20</td>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>30</td>
+            <td>0987654321</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Jane</td>
+            <td rowspan="2">Doe</td>
+            <td rowspan="2">25</td>
+            <td>9876543210</td>
+        </tr>
+        <tr>
+            <td>1234567890</td>
+        </tr>
+    </table>
+</body>
+</html>
