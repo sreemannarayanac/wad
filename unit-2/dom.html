@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="heading">Hello, DOM!</h1>
+    <p id="paragraph">This is a paragraph.</p>
+
+    <script>
+        // Accessing elements by ID
+        var heading = document.getElementById("heading");
+        var paragraph = document.getElementById("paragraph");
+
+        // Modifying element properties
+        heading.innerHTML = "Welcome to the DOM!";
+        paragraph.style.color = "blue";
+
+        // Creating new elements
+        var newElement = document.createElement("p");
+        newElement.id = "new-paragraph";
+        newElement.innerHTML = "This is a new paragraph.";
+        document.body.appendChild(newElement);
+
+        // Removing elements
+        var oldElement = document.getElementById("paragraph");
+        oldElement.parentNode.removeChild(oldElement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Handlers</title>
+    </head>
+    <body onload="onloadFun()">
+        <h1 onmousedown="mouseDown()" onmouseup="mouseUp()" id="heading">Event Handlers</h1> <br>
+        <p onmouseover="mouseOver()" onmouseout="mouseOut()" id="mouseover">Mouse Events</p> <br>
+        <input type="text" onfocus="focusFun()" onblur="blurFun()" placeholder="Enter some text" id="in1"> <br>
+        <input type="text" onkeydown="keyDown()" onkeyup="keyUp()" placeholder="Enter some text" id="in2"> <br>
+        <input type="text" onchange="change()" placeholder="Enter some text" id="in3"> <br>
+        <select onchange="changeFun()" id="s1">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select> <br>
+        <button onclick="clickFun()" id="b1">Click Me</button> <br><br><br>
+        <textarea id="submission">Enter some text here...</textarea> <br>
+        <button onclick="submitFun()">Change text to uppercase</button>
+        <script>
+            function onloadFun() {
+                alert("Page loaded");
+            }
+
+            function mouseDown() {
+                document.getElementById("heading").style.fontSize = "50px";
+            }
+
+            function mouseUp() {
+                document.getElementById("heading").style.fontSize = "30px";
+            }
+
+            function mouseOver() {
+                document.getElementById("mouseover").style.color = "red";
+            }
+
+            function mouseOut() {
+                document.getElementById("mouseover").style.color = "blue";
+            }
+
+            function focusFun() {
+                document.getElementById("in1").style.backgroundColor = "yellow";
+            }
+
+            function blurFun() {
+                document.getElementById("in1").style.backgroundColor = "aqua";
+            }
+
+            function keyDown() {
+                document.getElementById("in2").style.backgroundColor = "yellow";
+            }
+
+            function keyUp() {
+                document.getElementById("in2").style.backgroundColor = "aqua";
+            }
+
+            function change() {
+                document.getElementById("in3").style.color = "red";
+            }
+
+            function clickFun() {
+                document.getElementById("in1").style.backgroundColor = "white";
+                document.getElementById("in2").style.backgroundColor = "white";
+                document.getElementById("in3").style.color = "black";
+                document.getElementById("s1").style.backgroundColor = "white";
+            }
+
+            function changeFun() {
+                document.getElementById("s1").style.backgroundColor = "yellow";
+            }
+
+            function submitFun() {
+                var txt = document.getElementById("submission").value;
+                document.getElementById("submission").value = txt.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

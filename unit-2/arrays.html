@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+</head>
+<body>
+    <h1>Array Operations</h1>
+
+    <script>
+        // Create an array
+        var fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+        // Actual array
+        document.write("<h2>Actual Array:</h2>");
+        document.write('[' + fruits + "]<br>");
+
+        // Accessing elements
+        document.write("<h2>Accessing Elements:</h2>");
+        document.write("First element: " + fruits[0] + "<br>");
+        document.write("Last element: " + fruits[fruits.length - 1] + "<br>");
+
+        // Adding elements
+        document.write("<h2>Adding Elements:</h2>");
+        fruits.push("Grapes");
+        document.write("After adding 'Grapes': " + fruits + "<br>");
+
+        // Removing elements
+        document.write("<h2>Removing Elements:</h2>");
+        fruits.pop();
+        document.write("After removing last element: " + fruits + "<br>");
+
+        // Updating elements
+        document.write("<h2>Updating Elements:</h2>");
+        fruits[1] = "Watermelon";
+        document.write("After updating second element: " + fruits + "<br>");
+
+        // Concatenating arrays
+        document.write("<h2>Concatenating Arrays:</h2>");
+        var moreFruits = ["Pineapple", "Kiwi"];
+        var allFruits = fruits.concat(moreFruits);
+        document.write("All fruits: " + allFruits + "<br>");
+
+        // Slicing an array
+        document.write("<h2>Slicing an Array:</h2>");
+        var slicedFruits = allFruits.slice(1, 4);
+        document.write("Sliced fruits: " + slicedFruits + "<br>");
+
+        // Sorting an array
+        document.write("<h2>Sorting an Array:</h2>");
+        allFruits.sort();
+        document.write("Sorted fruits: " + allFruits + "<br>");
+
+        // Reversing an array
+        document.write("<h2>Reversing an Array:</h2>");
+        allFruits.reverse();
+        document.write("Reversed fruits: " + allFruits + "<br>");
+
+        // Finding index of an element
+        document.write("<h2>Finding Index of an Element:</h2>");
+        var index = allFruits.indexOf("Watermelon");
+        document.write("Index of 'Watermelon': " + index + "<br>");
+
+        // Checking if an element exists
+        document.write("<h2>Checking if an Element Exists:</h2>");
+        var exists = allFruits.includes("Pineapple");
+        document.write("'Pineapple' exists: " + exists + "<br>");
+    </script>
+</body>
+</html>

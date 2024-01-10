@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Built-in Objects Demo</title>
+</head>
+<body>
+    <h1>Built-in Objects Demo</h1>
+
+    <script>
+        var browserName = navigator.appName;
+        var browserVersion = navigator.appVersion;
+        var userAgent = navigator.userAgent;
+
+        document.write("<h2>Navigator Object</h2>");
+        document.write("<p>Browser Name: " + browserName + "</p>");
+        document.write("<p>Browser Version: " + browserVersion + "</p>");
+        document.write("<p>User Agent: " + userAgent + "</p>");
+
+        var randomNumber = Math.random();
+        var roundedNumber = Math.round(5.6);
+
+        document.write("<h2>Math Object</h2>");
+        document.write("<p>Random Number: " + randomNumber + "</p>");
+        document.write("<p>Rounded Number: " + roundedNumber + "</p>");
+
+        var currentDate = new Date();
+
+        document.write("<h2>Date Object</h2>");
+        document.write("<p>Current Date: " + currentDate.toDateString() + "</p>");
+
+        var message = "Hello, World!";
+        var messageLength = message.length;
+        var uppercaseMessage = message.toUpperCase();
+
+        document.write("<h2>String Object</h2>");
+        document.write("<p>Message: " + message + "</p>");
+        document.write("<p>Message Length: " + messageLength + "</p>");
+        document.write("<p>Uppercase Message: " + uppercaseMessage + "</p>");
+    </script>
+</body>
+</html>

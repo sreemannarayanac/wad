@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regular Expression</title>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            
+            if (passwordPattern.test(password)) {
+                alert("Password is valid!");
+            }
+            
+            else if (password.length < 8) {
+                alert("Password must be at least 8 characters long!");
+            }
+            
+            else if (!/\d/.test(password)) {
+                alert("Password must contain at least one digit!");
+            }
+            
+            else if (!/[a-z]/.test(password)) {
+                alert("Password must contain at least one lowercase letter!");
+            }
+            
+            else if (!/[A-Z]/.test(password)) {
+                alert("Password must contain at least one uppercase letter!");
+            }
+
+            else {
+                alert("Password is invalid!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Password Validation using Regular Expression</h1>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="validatePassword()">Check Password</button>
+</body>
+</html>
