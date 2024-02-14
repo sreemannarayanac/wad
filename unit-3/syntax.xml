@@ -1,0 +1,22 @@
+<!-- BEGIN: Online Store Items -->
+<store>
+    <item id="1">
+        <name>T-Shirt</name>
+        <price>19.99</price>
+        <color>Red</color>
+        <size>M</size>
+    </item>
+    <item id="2">
+        <name>Jeans</name>
+        <price>39.99</price>
+        <color>Blue</color>
+        <size>32</size>
+    </item>
+    <item id="3">
+        <name>Shoes</name>
+        <price>59.99</price>
+        <color>Black</color>
+        <size>9</size>
+    </item>
+</store>
+<!-- END: Online Store Items -->

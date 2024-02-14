@@ -1,0 +1,39 @@
+<!-- Define the DTD -->
+<!DOCTYPE root [
+
+    <!-- Define the elements -->
+    <!ELEMENT root (person*)>
+    <!-- 'root' element can contain zero or more 'person' elements -->
+
+    <!ELEMENT person (name, age, email?)>
+    <!-- 'person' element must contain 'name' and 'age' elements,
+             and optionally an 'email' element -->
+
+    <!ELEMENT name (#PCDATA)>
+    <!-- 'name' element can contain parsed character data -->
+
+    <!ELEMENT age (#PCDATA)>
+    <!-- 'age' element can contain parsed character data -->
+
+    <!ELEMENT email (#PCDATA)>
+    <!-- 'email' element can contain parsed character data -->
+
+    <!-- Define the entities -->
+    <!ENTITY company "ABC Corp">
+    <!-- 'company' entity represents the text "ABC Corp" -->
+
+    <!ENTITY website "https://www.abccorp.com">
+    <!-- 'website' entity represents the text "https://www.abccorp.com" -->
+
+]>
+<root>
+    <person>
+        <name>John Doe</name>
+        <age>30</age>
+        <email>john.doe@example.com</email>
+    </person>
+    <person>
+        <name>Jane Smith</name>
+        <age>25</age>
+    </person>
+</root>
